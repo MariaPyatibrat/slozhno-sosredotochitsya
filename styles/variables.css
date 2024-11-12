@@ -2,3 +2,38 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+    --primary-font-family: 'IBM Plex mono';
+    --secondary-font-family: Arial, sans-serif;
+
+    /* Цвета */
+    --background-color: #ffe6f0;
+    --text-color: #333;
+    --accent-color: #FFC2E6;
+    --bg-color-light-pink: #FF8DCB;
+    --bg-color-bright-pink: #FF0070;
+    --button-border-color: #353430;
+
+    /*Фон и картинки*/
+    --background-image-light: url(../images/cover-image-light.png);
+    --background-image-dark: url(../images/cover-image-dark.png);
+
+    /* Размеры шрифтов */
+    --mobile-version-font: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --font-for-computer-and-tablet-versions: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --font-size-normal: 18px;
+
+    /*Толщина шрифта*/
+    --bold: 700;
+    --trin: 400;
+
+    /* Высоты */
+    --title-line-height: 95.7px;
+    --paragraph-line-height: 23.4px;
+
+    /* Отступы */
+    --header-menu-start-margin: 65px;
+    --theme-menu-gap: 10px;
+    --title-margin: 65px 0 55px;
+    --description-margin: 0;
+}
