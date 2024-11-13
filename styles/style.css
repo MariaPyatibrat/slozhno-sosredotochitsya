@@ -5,7 +5,7 @@
     align-items: center;
     font-family: var(--primary-font-family);
     background-color: var(--background-color);
-    background-image: var(--background-image-light);
+    background-image: var(--image-background);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -22,12 +22,23 @@
     text-align: center;
     inline-size: 355px;
     min-height: 668px;
-    background-image: var(--background-image-light);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     margin-block-end: 50px;
+}
+.rec-indicator {
+    position: absolute;
+    color: var(--rec-color);
+    top: 3px;
+    right: 10px;
+    gap: 10px;
+}
+.rec-indicator::after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    background-color: var(--rec-color);
+    box-shadow: 0 0 4px 2px var(--title-shadow-color);
+    border-radius: 50%;
 }
 .decorated-zone {
     position: relative;
@@ -41,7 +52,7 @@
     height: 25px;
     border-width: 1px 1px 0 0;
     border-style: solid;
-    border-color: var(--button-border-color);
+    border-color: var(--decor-color);
 }
 .decorated-zone::after {
     content: '';
@@ -52,7 +63,7 @@
     height: 25px;
     border-width: 0 0 1px 1px;
     border-style: solid;
-    border-color: var(--button-border-color);
+    border-color: var(--decor-color);
 }
 .header__theme-menu {
     display: flex;
@@ -72,6 +83,7 @@
     border: none;
     width: 70px;
     height: 26px;
+    color: var(--menu-color);
     font-family: var(--primary-font-family);
     font-size: var(--font-size-normal);
     font-weight: var(--trin);
@@ -79,27 +91,29 @@
     text-transform: lowercase;
 }
 .header__theme-menu-button_type_light {
-    border: 1px solid var(--button-border-color);
+    border: 1px solid var(--menu-color);
 }
 .title {
     font-family: var(--primary-font-family);
     font-size: var(--mobile-version-font);
-    color: var(--accent-color);
-    text-shadow: 4px 4px 0 var(--bg-color-light-pink);
+    color: var(--title-color);
+    text-shadow: 4px 4px 0 var(--title-shadow-color);
     text-align: left;
     line-height: var(--title-line-height);
     margin: 65px 0 55px;
 }
 .description {
+    background-color: var(--accent-color);
     font-family: var(--primary-font-family);
-    color: var(--text-color);
+    color: var(--accent-color-with-background);
     font-size: var(--font-size-normal);
     font-weight: var(--bold);
     line-height: var(--paragraph-line-height);
     text-align: left;
 }
 .title-decor {
-    background-color: var(--bg-color-light-pink);
+    color: var(--accent-color-with-background);
+    background-color: var(--accent-color);
 }
 .content-main {
     width: 355px;
@@ -112,6 +126,7 @@
     font-family: var(--primary-font-family);
     font-weight: var(--bold);
     line-height: var(--paragraph-line-height);
+    color: var(--header-color);
     text-align: left;
     margin-block-end: 10px;
 }
@@ -153,8 +168,8 @@
 .footer__title {
     font-family: var(--primary-font-family);
     font-size: var(--mobile-version-font);
-    color: var(--accent-color);
-    text-shadow: 4px 4px 0 var(--bg-color-light-pink);
+    color: var(--title-color);
+    text-shadow: 2px 2px 0 var(--title-shadow-color);
     text-align: left;
     line-height: var(--title-line-height);
 }
@@ -173,21 +188,7 @@
         align-items: flex-start;
         inline-size: 728px;
         block-size: 984px;
-        background-image: var(--background-image-light);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         margin-block-end: 60px;
-    }
-    .title {
-        font-size: var(--font-for-computer-and-tablet-versions);
-        inline-size: 576px;
-        white-space:nowrap;
-        text-align: center;
-        color: var(--accent-color);
-        text-shadow: 4px 4px 0 var(--bg-color-light-pink);
-        margin-top: 0;
-        margin-block-end: 162px;
     }
     .header__theme-menu {
         display: flex;
@@ -199,6 +200,16 @@
         inline-size: 90px;
         block-size: 30px;
         font-size: var(--font-size-normal);
+    }
+    .title {
+        font-size: var(--font-for-computer-and-tablet-versions);
+        inline-size: 576px;
+        white-space:nowrap;
+        text-align: center;
+        color: var(--title-color);
+        text-shadow: 4px 4px 0 var(--title-shadow-color);
+        margin-top: 0;
+        margin-block-end: 162px;
     }
     .description {
         width: 50%;
@@ -235,6 +246,7 @@
     .content-section__heading {
         inline-size: 236px;
         margin-block-end: 20px;
+        color: var(--header-color);
     }
     .activity-title{
         margin-block-start: 20px;
@@ -278,6 +290,7 @@
         block-size: 984px;
     }
     .footer__title {
+        text-shadow: 2px 2px 0 var(--title-shadow-color);
         font-size: var(--font-for-computer-and-tablet-versions);
     }
 }
@@ -288,17 +301,18 @@
         align-items: center;
         flex-direction: column;
         padding: 20px;
-        block-size: 5008px;
     }
     .header {
         display: flex;
         justify-content: space-between;
         inline-size: 984px;
+        block-size: 728px;
     }
     .header__theme-menu {
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 100%;
         margin: 0;
     }
     .header__theme-menu-list {
@@ -312,8 +326,8 @@
     .title {
         inline-size: 759px;
         font-size: 157px;
-        text-shadow: 4px 4px 0 var(--bg-color-bright-pink);
-        margin: 273px 0 114px;
+        color: var(--title-color);
+        margin: 270px 0 114px;
     }
     .content-main {
         inline-size: 984px;
@@ -325,6 +339,7 @@
     }
     .content-section__heading {
         inline-size: 315px;
+        color: var(--header-color);
     }
     .activity-title{
         margin-block-start: 20px;
@@ -385,6 +400,6 @@
         block-size: 728px;
     }
     .footer__title {
-        text-shadow: 4px 4px 0 var(--bg-color-bright-pink);
+        font-size: var(--font-for-computer-and-tablet-versions);
     }
 }
