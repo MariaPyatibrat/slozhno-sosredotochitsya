@@ -9,6 +9,7 @@
     --menu-color: #353430;
     --image-background: url(../images/cover-image-light.png);
     --text-color: #353430;
+    --button-hover-color: #32312D66;
 }
 @media (prefers-color-scheme: light) {
     :root {
@@ -22,6 +23,7 @@
         --menu-color: #353430;
         --image-background: url(../images/cover-image-light.png);
         --text-color: #353430;
+        --button-hover-color: #32312D66;
     }
 }
 .page.theme_light {
@@ -35,6 +37,7 @@
     --menu-color: #353430;
     --image-background: url(../images/cover-image-light.png);
     --text-color: #353430;
+    --button-hover-color: #32312D66;
 }
 @media (min-width: 1024px) {
     .title {

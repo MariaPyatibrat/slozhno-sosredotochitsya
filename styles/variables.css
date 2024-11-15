@@ -27,6 +27,7 @@
     /* Высоты */
     --title-line-height: 95.7px;
     --paragraph-line-height: 23.4px;
+    --letter-spacing-for-text: -0.4px;
 
     /* Отступы */
     --header-menu-start-margin: 65px;
