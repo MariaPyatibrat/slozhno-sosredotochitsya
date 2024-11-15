@@ -93,14 +93,6 @@
     text-transform: lowercase;
     cursor: pointer;
 }
-.header__theme-menu-button {
-    font-size: 18px;
-    color: var(--menu-color);
-    background-color: transparent;
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
 .header__theme-menu-button:hover {
     outline: 1px solid var(--button-hover-color);
 }
@@ -303,7 +295,7 @@
         margin-block-end: 19px;
         color: var(--header-color);
     }
-    .activity-title{
+    .activity-title {
         margin-block-start: 20px;
     }
     .content-section__text {
@@ -404,7 +396,7 @@
         inline-size: 315px;
         color: var(--header-color);
     }
-    .activity-title{
+    .activity-title {
         margin-block-start: 19px;
     }
     .content-section__text {
