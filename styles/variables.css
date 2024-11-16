@@ -11,10 +11,6 @@
     --image-background: url(../images/cover-image-light.png);
     --text-color: #353430;
 
-    /*Фон и картинки*/
-    --background-image-light: url(../images/cover-image-light.png);
-    --background-image-dark: url(../images/cover-image-dark.png);
-
     /* Размеры шрифтов */
     --mobile-version-font: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     --font-for-computer-and-tablet-versions: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
