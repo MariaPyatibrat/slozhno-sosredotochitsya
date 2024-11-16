@@ -10,7 +10,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    padding: 10px;
+    padding: 14px 10px;
     min-height: 100dvh;
 }
 .header {
@@ -113,7 +113,7 @@
     text-shadow: 4px 4px 0 var(--title-shadow-color);
     text-align: left;
     line-height: var(--title-line-height);
-    margin: 0 0 55px 0;
+    margin: 0 0 58px 0;
 }
 .description {
     background-color: var(--accent-color);
@@ -138,7 +138,7 @@
     margin-block-end: 51px;
 }
 .content-section:nth-child(3) {
-    margin-block-end: 50px;
+    margin-block-end: 51px;
 }
 .content-section__heading {
     font-size: var(--font-size-normal);
