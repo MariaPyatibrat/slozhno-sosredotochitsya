@@ -10,7 +10,6 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    color: var(--text-color);
     padding: 10px;
     min-height: 100dvh;
 }
@@ -173,6 +172,7 @@
     text-align: left;
     margin-block-start: 10px;
     margin-block-end: 19px;
+    color: var(--text-color);
 }
 .content-text-link {
     inline-size: 97px;
