@@ -15,7 +15,7 @@
 .theme_light .rec-indicator {
     display: none;
 }
-.theme_auto .rec-indicator{
+.theme_auto .rec-indicator {
     display: none;
 }
 @media (min-width: 1024px) {
