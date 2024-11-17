@@ -1,4 +1,4 @@
-.page.theme_light {
+.page.theme_light, .page.theme_auto {
     --accent-color: #FF8DCB;
     --background-color: #FFF1F7;
     --accent-color-with-background: #353430;
@@ -15,7 +15,9 @@
 .theme_light .rec-indicator {
     display: none;
 }
-
+.theme_auto .rec-indicator{
+    display: none;
+}
 @media (min-width: 1024px) {
     .title {
         text-shadow: 4px 4px 0 #FF0070;
