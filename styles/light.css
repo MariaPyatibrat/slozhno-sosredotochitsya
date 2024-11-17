@@ -1,4 +1,4 @@
-.page.theme_light, .page.theme_auto {
+.page.theme_light {
     --accent-color: #FF8DCB;
     --background-color: #FFF1F7;
     --accent-color-with-background: #353430;
@@ -11,11 +11,7 @@
     --text-color: #353430;
     --button-hover-color: #32312D66;
 }
-
 .theme_light .rec-indicator {
-    display: none;
-}
-.theme_auto .rec-indicator {
     display: none;
 }
 @media (min-width: 1024px) {

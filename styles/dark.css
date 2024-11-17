@@ -1,4 +1,4 @@
-.page.theme_dark {
+.page.theme_dark, .page.theme_auto {
     --background-color: #000028;
     --accent-color: #FF0070;
     --title-color: #DB00FF;
