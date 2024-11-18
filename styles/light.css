@@ -15,10 +15,36 @@
     display: none;
 }
 @media (min-width: 1024px) {
-    .title {
+    .page.theme_light .title {
         text-shadow: 4px 4px 0 #FF0070;
     }
-    .footer__title {
+    .page.theme_light .footer__title {
         text-shadow: 2px 2px 0 #FF0070;
+    }
+}
+@media (prefers-color-scheme: light) {
+    :root {
+        --accent-color: #FF8DCB;
+        --background-color: #FFF1F7;
+        --accent-color-with-background: #353430;
+        --title-color: #FFC2E6;
+        --title-shadow-color: #FF8DCB;
+        --header-color: #353430;
+        --decor-color: #353430;
+        --menu-color: #353430;
+        --image-background: url(../images/cover-image-light.png);
+        --text-color: #353430;
+        --button-hover-color: #32312D66;
+    }
+    @media (min-width: 1024px) {
+        .title {
+            text-shadow: 4px 4px 0 #FF0070;
+        }
+        .footer__title {
+            text-shadow: 2px 2px 0 #FF0070;
+        }
+    }
+    .rec-indicator {
+        display: none;
     }
 }

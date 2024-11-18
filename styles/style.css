@@ -22,19 +22,25 @@
     margin-block-end: 31px;
 }
 .rec-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     color: var(--rec-color);
-    top: 12px;
-    right: 22px;
+    font-size: var(--font-size-normal);
+    top: 10px;
+    right: 19px;
     gap: 10px;
 }
 .rec-indicator::after {
     content: '';
-    width: 9px;
-    height: 9px;
+    inline-size: 9px;
+    block-size: 9px;
     background-color: var(--rec-color);
     box-shadow: 0 0 4px 2px var(--title-shadow-color);
-    border-radius: 50%;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: end;
 }
 .decorated-zone {
     position: relative;
