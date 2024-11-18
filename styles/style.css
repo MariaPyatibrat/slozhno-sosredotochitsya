@@ -140,7 +140,7 @@
     margin-block-end: 51px;
 }
 .content-section--focus-tips {
-    margin-block-end: 51px;
+    margin-block-end: 49px;
 }
 .content-section__heading {
     font-size: var(--font-size-normal);
@@ -157,7 +157,7 @@
     list-style-type: none;
 }
 .content-section--focus-tips .content-section__list {
-    gap: 1px;
+    gap: 0;
 }
 .content-section__subtitle {
     font-weight: var(--bold);
@@ -271,7 +271,6 @@
     .description {
         width: 50%;
         align-self: end;
-        text-align: left;
         margin-block-end: 138px;
     }
     .content-main {
@@ -297,14 +296,12 @@
         margin-block-end: 82px;
     }
     .content-section--focus-tips {
-        margin-block-end: 81px;
+        margin-block-end: 79px;
     }
     .content-section__heading {
         inline-size: 236px;
-        margin-block-end: 19px;
     }
     .content-section__text {
-        margin-block-start: 10px;
         margin-block-end: 19px;
     }
     .content-section__image-grid {
@@ -339,7 +336,6 @@
     }
     .footer {
         inline-size: 768px;
-        block-size: 100vh;
         min-block-size: 1024px;
         padding: 20px;
     }
@@ -351,7 +347,6 @@
     .header {
         justify-content: space-between;
         inline-size: 1024px;
-        block-size: 100vh;
         min-block-size: 768px;
         margin-block-end: 40px;
     }
@@ -384,7 +379,7 @@
         gap: 0;
     }
     .activity-title {
-        margin-block-start: 23px;
+        margin-block-start: 22px;
     }
     .content-section__text {
         margin-block-end: 18px;
@@ -406,10 +401,10 @@
         max-width: 315px;
     }
     .content-section--attention-reducers {
-        margin-block-end: 79px;
+        margin-block-end: 81px;
     }
     .content-section--focus-tips {
-        margin-block-end: 80px;
+        margin-block-end: 78px;
     }
     .content-section--gallery {
         grid-template-columns: 315px 649px;
@@ -417,16 +412,11 @@
     }
     .content-section__image-grid {
         inline-size: 984px;
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(3, auto);
         gap: 22px;
         margin-block-start: 20px;
     }
     .footer {
         inline-size: 1024px;
         min-block-size: 768px;
-    }
-    .footer__title {
-        font-size: var(--font-for-computer-and-tablet-versions);
     }
 }

@@ -13,11 +13,12 @@
     --image-background: url(../images/cover-image-dark.png);
     --text-color: #F1B2CE;
 }
-.theme_dark .rec-indicator {
+.theme_dark .rec-indicator, .theme_auto .rec-indicator {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color: #000028;
